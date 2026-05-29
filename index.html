@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet"href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="Width=device-width,
+    initial-scale=1.0">
+    <title>Social Media Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <h2>ConnectHub</h2>
+            <nav>
+                <a href="#">Dashboard</a>
+                <a href="profile.html">Profile</a>
+                <a href="messages.html">Message</a>
+                <a href="#">Analytics</a>
+                <a href="#">Notifications</a>
+                <a href="settings.html">Settings</a>
+            </nav>
+            <button id="themeBtn">Toggle Theme</button>
+        </aside>
+        <main class="main-content">
+            <header>
+                <h1>Social Media Dashboard</h1>
+                <input type="text"placeholder="search...">
+            </header>
+            <section class="stats">
+                <div class="card">
+                    <h3>Followers</h3>
+                    <p id="followers">12,450</p>
+                </div>
+                <div class="card">
+                    <h3>Likes</h3>
+                    <p id="likes">34,800</p>
+                </div>
+                <div class="card">
+                    <h3>Posts</h3>
+                    <p id="postsCount">120</p>
+                </div>
+                <div class="card">
+                    <h3>Comments</h3>
+                    <p id="postsCount">8,900</p>
+                </div>
+            </section>
+            <section class="charts">
+                <div class="chart-box">
+                    <canvas id="growthChart"></canvas>
+                </div>
+            </section>
+            <section class="create-post">
+                <h2>Create Post</h2>
+                <input type="text"id="postsTitle"placeholder="Post Title">
+                <textarea id="postsContent"placeholder="Write Something..."></textarea>
+                <button id="addPostBtn">Post</button>
+            </section>
+            <section class="posts-section">
+                <h2>Recent Posts</h2>
+                <div id="postsContainer"></div>
+            </section>
+        </main>
+    </div>
+    <script type="module"src="js/app.js"></script>
+</body>
+</html>
